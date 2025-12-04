@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tech Blog — Home</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header u-mb-xs" role="banner">
+    <div class="site site-header__inner">
+      <p class="site-header__brand">TechBlog</p>
+
+      <nav class="site-header__navbar" role="navigation" aria-label="primary-navigation">
+        <ul class="site-header__nav-list">
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">Home</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">About</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">Categories</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="site-header__button button button--subscribe" type="button">Subscribe</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="site hero__inner">
+      <h1 class="hero__title u-mb-s">Welcome to Tech Blog</h1>
+      <p class="hero__lead u-mb-m">Discover the latest insights in web development, design, and technology</p>
+
+      <form class="hero__search" role="search">
+        <input class="hero__search-input form-input" type="search" placeholder="Search articles...">
+      </form>
+    </div>
+  </section>
+
+  <!-- SITE (content & sidebar) -->
+  <div class="site">
+    <div class="layout">
+      <main>
+        <!-- INTRO -->
+        <section class="article-intro u-mt-m u-mb-m">
+          <h2 class="article-intro__heading u-mb-xs">Featured articles</h2>
+          <p class="article-intro__lead u-mb-s">Latest insights and tutorials from our experts</p>
+        </section>
+
+        <!-- ARTICLES GRID -->
+        <section class="articles u-mb-m">
+    
+          <article class="article-card">
+            <img class="article-card__img" src="images/image1.png" alt="Laptop på skrivbord" loading="eager">
+            <header class="article-card__header">
+              <p class="article-card__category">Web Development</p>
+              <p class="article-card__date">January 15, 2024</p>
+            </header>
+
+            <h3 class="article-card__title u-mb-xs">Modern CSS Grid techniques for responsive design</h3>
+            <p class="article-card__text">Learn how to create flexible and responsive layouts using the latest CSS Grid features. 
+              This comprehensive guide covers everything from basic grid concepts to advanced techniques.</p>
+
+            <footer class="article-card__meta">
+              <img class="article-card__author-photo" src="images/author1.jpg" alt="John Smith" loading="lazy">
+              <div>
+                <p class="article-card__author">By John Smith</p>
+                <p class="article-card__author-role">Senior developer</p>
+              </div>
+              <p class="article-card__reading-time">8 min read</p>
+            </footer>
+          </article>
+
+          <!-- SECOND ARTICLE -->
+          <article class="article-card">
+            <img class="article-card__img" src="images/image2.png" alt="Illustration om tillgänglighet" loading="lazy">
+            <header class="article-card__header">
+              <p class="article-card__category">Accessibility</p>
+              <p class="article-card__date">January 12, 2024</p>
+            </header>
+            <h3 class="article-card__title u-mb-xs">Building accessible web applications: a complete guide</h3>
+            <p class="article-card__text">Discover essential techniques for creating inclusive web experiences. From semantic HTML to ARIA attributes, learn how 
+              to make your applications accessible to all users.</p>
+
+            <footer class="article-card__meta">
+              <img class="article-card__author-photo" src="images/author2.jpg" alt="Sarah Johnson" loading="lazy">
+              <div>
+                <p class="article-card__author">By Sarah Johnson</p>
+                <p class="article-card__author-role">UX Designer</p>
+              </div>
+              <p class="article-card__reading-time">10 min read</p>
+            </footer>
+          </article>
+        </section>
+
+        <!-- PAGES -->
+        <section class="pages">
+          <ul class="pages__list u-center" role="navigation">
+            <li class="pages__list-item">
+              <a class="pages__link pages__link--active" href="#">1</a>
+            </li>
+            <li class="pages__list-item">
+              <a class="pages__link" href="#">2</a>
+            </li>
+            <li class="pages__list-item">
+              <a class="pages__link" href="#">3</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar u-mt-m">
+        <article class="sidebar__section sidebar__section--categories">
+          <h2 class="sidebar__section-title u-mb-s">Categories</h2>
+          <ul class="sidebar__section-list">
+            <li class="sidebar__list-item u-mb-s">
+              <a class="sidebar__link" href="#">Web Development</a>
+            </li>
+            <li class="sidebar__list-item u-mb-s">
+              <a class="sidebar__link" href="#">Design</a>
+            </li>
+            <li class="sidebar__list-item u-mb-s">
+              <a class="sidebar__link" href="#">Accessibility</a>
+            </li>
+            <li class="sidebar__list-item u-mb-s">
+              <a class="sidebar__link" href="#">JavaScript</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="sidebar__section sidebar__section--subscribe">
+          <h2 class="sidebar__section-title u-mb-s">Stay updated</h2>
+          <form class="sidebar__form">
+            <input id="subscribe-email" class="sidebar__form-input form-input u-mb-s" type="email" placeholder="Your email address" required>
+            <button class="sidebar__button button button--subscribe" type="submit">Subscribe</button>
+          </form>
+        </article>
+
+        <article class="sidebar__section sidebar__section--popular-posts">
+          <h2 class="sidebar__section-title u-mb-s">Popular Posts</h2>
+          <ul class="sidebar__section-list">
+            <li class="sidebar__list-item u-mb-s">
+              <a class="sidebar__link" href="#">Essential JavaScript array methods</a>
+            </li>
+            <li class="sidebar__list-item u-mb-s">
+              <a class="sidebar__link" href="#">Responsive design best practices</a>
+            </li>
+          </ul>
+        </article>
+      </aside>
+    </div> <!-- .layout -->
+  </div> <!-- .site -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer u-mb-l" role="contentinfo">
+    <div class="site">
+      <section class="site-footer__section site-footer__section--about u-mb-s">
+        <h2 class="site-footer__title">Tech Blog</h2>
+        <p class="site-footer__text">Sharing knowledge and insights about web development, design, and technology.</p>
+      </section>
+
+      <section class="site-footer__section site-footer__section--links u-mb-s">
+        <h2 class="site-footer__title">Quick Links</h2>
+        <ul class="site-footer__list">
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">Home</a>
+          </li>
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">About</a>
+          </li>
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">Categories</a>
+          </li>
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="site-footer__section site-footer__section--categories u-mb-s">
+        <h2 id="footer-cats" class="site-footer__title">Categories</h2>
+        <ul class="site-footer__list">
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">Web Development</a>
+          </li>
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">Design</a>
+          </li>
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">Accessibility</a>
+          </li>
+          <li class="site-footer__list-item">
+            <a class="site-footer__link" href="#">JavaScript</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+</body>
+</html>
