@@ -122,7 +122,7 @@ body {
   text-decoration: none;
   font-size: var(--font-size-m);
   padding: 0.25rem 0.5rem;
-  border-radius: 6px;
+  border-radius: var(--radius-s);
 }
 
 .site-header__button {
@@ -166,7 +166,6 @@ body {
   border-radius: var(--radius-m);
   border: none;
   font-size: var(--font-size-m);
-  box-shadow: 0 6px 18px rgba(10,20,60,0.12);
 }
 
 /* =================================================
@@ -174,7 +173,7 @@ body {
 ================================================= */
 .layout {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 30%;
   gap: var(--space-l);
 }
 
@@ -233,8 +232,8 @@ body {
   padding: var(--padding-xs);
   border-radius: var(--radius-m);
   font-size: var(--font-size-s);
-  font-weight: var(--minor-h-weight);
 }
+
 
 .article-card__date { 
   color: var(--muted); 
@@ -242,7 +241,7 @@ body {
 }
 
 .article-card__title { 
-  font-size: 1.125rem; 
+  font-size: var(--font-size-l); 
   margin: 0; 
   font-weight: var(--major-h-weight); 
 }
@@ -315,7 +314,6 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: var(--space-m);
 }
 
 .sidebar__section {
@@ -329,6 +327,7 @@ body {
 .sidebar__section-title { 
   margin: 0 0 var(--space-s); 
   font-size: var(--font-size-m); 
+  font-weight: var(--major-h-weight);
 }
 
 .sidebar__section--subscribe {
@@ -400,6 +399,7 @@ body {
   color: var(--accent-text-color);
   outline: none;
 }
+
 
 /* =================================================
   Utilities 
